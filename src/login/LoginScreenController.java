@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import Common.DBUtil;
+import home.HomeScreenView;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -28,6 +29,7 @@ public class LoginScreenController {
 		{
 			error_message.setText("Login Success");
 			error_message.setTextFill(Color.GREEN);
+			HomeScreenView.show();
 		}
 		else
 		{

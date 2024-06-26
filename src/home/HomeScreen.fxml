@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.chart.*?>
 <?import javafx.scene.text.*?>
@@ -8,7 +9,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeScreenController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff971f" height="867.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="628.0" />
       <Label layoutX="114.0" layoutY="265.0" text="ECommerce_Management" textFill="#030000">
@@ -22,17 +23,17 @@
          </font>
       </Label>
       <Line endX="100.0" layoutX="951.0" layoutY="213.0" startX="-100.0" />
-      <Button layoutX="791.0" layoutY="282.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="355.0" text="1.Add User" textFill="#ff2121">
+      <Button fx:id="adduserbutton" layoutX="791.0" layoutY="282.0" mnemonicParsing="false" onAction="#addUserButton" prefHeight="62.0" prefWidth="355.0" text="Add User" textFill="RED">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
-      <Button layoutX="791.0" layoutY="403.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="355.0" text="2.Add Product" textFill="RED">
+      <Button fx:id="addproductbutton" layoutX="791.0" layoutY="413.0" mnemonicParsing="false" onAction="#addProductButton" prefHeight="62.0" prefWidth="355.0" text="Add Product" textFill="RED">
          <font>
             <Font size="27.0" />
          </font>
       </Button>
-      <Button layoutX="791.0" layoutY="522.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="355.0" text="3.Exit" textFill="RED">
+      <Button fx:id="logoutbutton" layoutX="791.0" layoutY="540.0" mnemonicParsing="false" onAction="#LogoutButton" prefHeight="62.0" prefWidth="355.0" text="Logout" textFill="RED">
          <font>
             <Font size="27.0" />
          </font>
@@ -42,5 +43,10 @@
             <Image url="@../Image/4.png" />
          </image>
       </ImageView>
+      <Label layoutX="838.0" layoutY="50.0" text="Home Screen" textFill="#430505">
+         <font>
+            <Font name="Cambria Math" size="49.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
