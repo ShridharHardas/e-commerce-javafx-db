@@ -1,4 +1,4 @@
-package login;
+package javafx_login;
 
 import java.net.URL;
 import java.nio.file.Paths;
@@ -24,7 +24,7 @@ public class LoginScreenView extends Application{
 		CommonStatic.stage.setTitle("User_Login");
 		//stage.setFullScreen(true);
 		//stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("Esc"));
-		URL fxmlLoad=Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce-javafx-db\\src\\login\\LoginScreen.fxml").toUri().toURL();
+		URL fxmlLoad=Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce_javafx_db\\src\\javafx_login\\LoginScreen.fxml").toUri().toURL();
 		Parent actorgroup=FXMLLoader.load(fxmlLoad);
 		Scene scene=new Scene(actorgroup,1300,800);
 		CommonStatic.stage.setScene(scene);

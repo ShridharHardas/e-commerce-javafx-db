@@ -1,4 +1,4 @@
-package home;
+package javafx_home;
 
 import java.sql.SQLException;
 
@@ -6,7 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx_add_product.AddProductView;
 import javafx_add_user.AddUserView;
-import login.LoginScreenController;
+import javafx_login.LoginScreenController;
+import javafx_logout.LogoutScreenView;
 
 public class HomeScreenController {
 	@FXML
@@ -25,8 +26,8 @@ public class HomeScreenController {
 		AddProductView.showAddProductScreen();
 	}
 	public void LogoutButton() throws SQLException {
-//		LoginScreenController loginScreenController=new LoginScreenController();
-//		loginScreenController.userClickLogin();
+		System.out.println("Logout Button");
+		LogoutScreenView.logoutPage();
 	}
 
 }

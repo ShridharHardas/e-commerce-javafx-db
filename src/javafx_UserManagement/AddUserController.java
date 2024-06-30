@@ -1,4 +1,4 @@
-package javafx_add_user;
+package javafx_UserManagement;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
 public class AddUserController {
+	
 	@FXML
 	TextField firstNameText;
 	@FXML
@@ -23,9 +24,13 @@ public class AddUserController {
 	@FXML
 	TextField passwordText;
 	@FXML
+	TextField confirmPassword;
+	@FXML
 	Label errormessage;
 	public void addUser() throws SQLException
 	{
+		if(passwordText.getText().contains(confirmPassword.getText()))
+		{
 		String insertQuery="insert into user(userFirstName,userLastName,userAge,userGender,userEmail,userPassword) values('"+firstNameText.getText()+"','"+lastNameText.getText()+"','"+ageText.getText()+"','"+genderText.getText()+"','"+emailText.getText()+"','"+passwordText.getText()+"')";
 		String checkuser="select * from user where userFirstName='"+firstNameText.getText()+"' and userLastName='"+lastNameText.getText()+"'";
 		ResultSet Result=DBUtil.executeSelectQuery(checkuser);
@@ -42,6 +47,15 @@ public class AddUserController {
 			DBUtil.executeQuery(insertQuery);
 			
 		}
+		}
+		else
+		{
+			errormessage.setText("Password does not Match..!");
+			errormessage.setTextFill(Color.RED);
+		}
 	}
-
+	public void backButton()
+	{
+		UserManagementView.showBackUserMenuScreen();
+	}
 }

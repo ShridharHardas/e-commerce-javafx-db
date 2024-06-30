@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_add_product.AddProductController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1309.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_ProducManagement.CreateProductController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff971f" height="867.0" layoutX="-1.0" stroke="BLACK" strokeType="INSIDE" width="593.0" />
       <Label layoutX="114.0" layoutY="265.0" text="ECommerce_Management" textFill="#030000">

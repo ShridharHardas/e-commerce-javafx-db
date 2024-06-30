@@ -16,7 +16,7 @@ public class AddProductView {
 		URL fxmlload;
 		try {
 			CommonStatic.stage.setTitle("Add_Product");
-			fxmlload = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce-javafx-db\\src\\javafx_add_product\\AddProductScreen.fxml").toUri().toURL();
+			fxmlload = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce_javafx_db\\src\\javafx_add_product\\ProductMenuScreen.fxml").toUri().toURL();
 			Parent actorgroup=FXMLLoader.load(fxmlload);
 			Scene scene=new Scene(actorgroup,1300,800);
 			CommonStatic.stage.setScene(scene);

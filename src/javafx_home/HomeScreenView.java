@@ -1,4 +1,4 @@
-package home;
+package javafx_home;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -20,7 +20,7 @@ public class HomeScreenView  {
 		CommonStatic.stage.setTitle("Home_Page");
 		URL fxmlLoad;
 		try {
-			fxmlLoad = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce-javafx-db\\src\\home\\HomeScreen.fxml").toUri().toURL();
+			fxmlLoad = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce_javafx_db\\src\\javafx_home\\HomeScreen.fxml").toUri().toURL();
 			Parent actorgroup;
 			try {
 				actorgroup = FXMLLoader.load(fxmlLoad);

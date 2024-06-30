@@ -1,16 +1,15 @@
-package javafx_add_product;
+package javafx_ProducManagement;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import Common.DBUtil;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 
-public class AddProductController {
+public class CreateProductController {
 	@FXML
 	TextField productname;
 	@FXML
@@ -37,5 +36,5 @@ public class AddProductController {
 			DBUtil.executeQuery(insertQuery);
 		}
 	}
-	
+
 }

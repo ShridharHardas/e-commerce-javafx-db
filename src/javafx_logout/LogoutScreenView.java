@@ -1,4 +1,4 @@
-package javafx_add_user;
+package javafx_logout;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -10,13 +10,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 
-public class AddUserView {
-	public static void showAddUserScreen()
+public class LogoutScreenView {
+	public static void logoutPage()
 	{
 		URL fxmlload;
 		try {
-			CommonStatic.stage.setTitle("Add_User");
-			fxmlload = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce_javafx_db\\src\\javafx_add_user\\UserMenuJavaFxScreen.fxml").toUri().toURL();
+			fxmlload = Paths.get("C:\\Users\\Shridhar\\eclipse-workspace\\ecommerce_javafx_db\\src\\javafx_login\\LoginScreen.fxml").toUri().toURL();
 			Parent actorgroup=FXMLLoader.load(fxmlload);
 			Scene scene=new Scene(actorgroup,1300,800);
 			CommonStatic.stage.setScene(scene);
@@ -30,5 +29,6 @@ public class AddUserView {
 		}
 		
 	}
+	}
 
-}
+
